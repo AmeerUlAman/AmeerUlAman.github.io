@@ -12,7 +12,7 @@ const Nav = () => {
       threshold: [0.3, 0.6, 0.9],
     };
 
-    let debounceTimer;
+    let debounceTimer:number;
 
     const observer = new IntersectionObserver((entries) => {
       clearTimeout(debounceTimer);
