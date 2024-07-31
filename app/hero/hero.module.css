@@ -1,0 +1,140 @@
+.background{
+width: 87%;
+height: 75vh;
+margin: 0 auto;
+border-radius: 14px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+margin-bottom:79px ;
+display: flex;
+flex-direction: column;
+justify-content:  center;
+overflow: visible;
+position: relative;
+z-index: 1;
+align-items: center;
+background: linear-gradient(to bottom left,rgb(0, 0, 0),rgb(255, 0, 0));
+ 
+}
+
+ .text1{
+    
+    color: rgb(255, 255, 255);
+    font-size: 49px;
+    font-weight: 800;
+    margin: 0px;
+    margin-top: 80px;
+    padding: 13px;
+    
+ }
+ .text2{
+    color: rgb(255, 255, 255);
+    font-size: x-large;
+    font-weight: bolder;
+    margin: 0px;
+ }
+.im2{ 
+       background:url('subs.webp');
+       height: 150px;  
+    width: 360px;
+    background-size: cover; 
+ 
+    object-fit: cover;
+    position: absolute;
+     top: 340px;
+     left: 0px;
+     rotate: 45deg;
+     z-index: 3;
+     animation: upDown 2s ease-in-out infinite;
+
+    }
+.im3{  
+      background:url('yout.png');
+    height: 300px;  
+    width: 300px; 
+position: absolute;
+top: -70px;
+    background-size: cover; 
+    object-fit: cover;
+    left: 0px;
+    rotate: 60deg;
+    z-index: 3;
+    animation: upDown 2s ease-in-out infinite;
+}
+.im1{
+
+    background:url('youshort.png');
+    height: 300px;  
+    width: 300px; 
+position: absolute;
+
+    background-size: cover; 
+    object-fit: cover;
+    rotate: 0deg;
+    top:-30px;
+    right: -90px;
+    z-index: 3;   
+    animation: upDown 2s ease-in-out infinite;
+}
+.im4{
+    background:url('ys2.webp');
+    height: 250px;  
+    width: 250px;
+position: absolute;
+
+    background-size: cover; 
+    object-fit: cover;
+     top: 325px;
+     rotate: -25deg;
+    right: 0px;
+    z-index: 3;   
+    animation: upDown 2s ease-in-out infinite;
+
+}
+.im5{
+    background:url('ys.webp');
+    height: 250px;  
+    width: 250px;  
+position: absolute;
+top: -30px;
+left: 590px;
+    background-size: cover; 
+    object-fit: cover;
+  
+    z-index: 4;   
+    animation: upDown 2s ease-in-out infinite;
+
+}
+
+@keyframes upDown {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-9px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+.centbut{
+    display: flex;
+    margin-top: 32px;
+}
+ 
+.butsty{
+margin: 10px; 
+color: rgb(0, 0, 0);
+background-color: rgb(255, 255, 255);
+padding: 13px;
+font-size: larger;
+border-radius: 21px;
+border:2px solid black;
+font-weight: bolder;
+}
+
+.butsty:hover{
+    background: rgb(241, 21, 21); /* Slightly more opaque on hover */
+    box-shadow: 0 6px 12px rgba(255, 255, 255, 0.836); /* Slightly stronger shadow on hover */
+ color: white;
+}
