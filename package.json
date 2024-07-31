@@ -3,11 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
+  "build": "next build",
+  "export": "next export",
+  "deploy": "npm run build && npm run export && touch out/.nojekyll && git add -A && git commit -m 'Deploy' && git push origin main"
+},
   "dependencies": {
     "react": "^18",
     "react-dom": "^18",
@@ -22,11 +21,6 @@
     "tailwindcss": "^3.4.1",
     "eslint": "^8",
     "eslint-config-next": "14.2.5"
-  },
-  "scripts": {
-  "build": "next build",
-  "export": "next export",
-  "postbuild": "cp -r out/* ../ameerulaman.github.io/"
-}
+  }
 }
 
