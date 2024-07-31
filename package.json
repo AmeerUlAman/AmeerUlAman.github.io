@@ -22,5 +22,11 @@
     "tailwindcss": "^3.4.1",
     "eslint": "^8",
     "eslint-config-next": "14.2.5"
-  }
+  },
+  "scripts": {
+  "build": "next build",
+  "export": "next export",
+  "postbuild": "cp -r out/* ../ameerulaman.github.io/"
 }
+}
+
